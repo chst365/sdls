@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link href="js/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jump.js" type="text/javascript"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/wow.min.js"></script>
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/certify.css">
+    <link href="css/ZB_1a0.css" rel="stylesheet">
+    <script>
+        $(window).load(function(){
+            $('#myCarousel').addClass("fadeInRight");
+            $('.online').delay(1000).addClass("fadeInUp");
+        });
+        $(document).ready(function () {
+            var online =  $('.carousel-inner').offset().top;
+            var appoint =  $('.online').offset().top;
+            var course =  $('.course-box').offset().top;
+            var inter =  $('.inter-bk').offset().top;
+            var teacher = $('.bj').offset().top;
+            var record =  $('.score').offset().top;
+            var wH = $(window).height();
+            $(window).scroll(function(){
+                var oWinSrcHei = $(window).scrollTop();
+                console.log(online,appoint,course,inter,teacher,record);
+                console.log(oWinSrcHei);
+                if ((oWinSrcHei + 400)>online) {
+                    $('.appoint').addClass('fadeInLeft');
+                    $('.course-box').removeClass('fadeInRight');
+                    $('.inter-bk').removeClass('fadeInUp');
+                    $('.bj').removeClass('fadeInDown');
+                    $('.score').removeClass('fadeInUp');
+                }
+                if ((oWinSrcHei + 450)>appoint) {
+                    $('.appoint').removeClass('fadeInLeft');
+                    $('.course-box').addClass('fadeInRight');
+                    $('.inter-bk').removeClass('fadeInUp');
+                    $('.bj').removeClass('fadeInDown');
+                    $('.score').removeClass('fadeInUp');
+                }
+                if ((oWinSrcHei + 400)>course) {
+                    $('.appoint').removeClass('fadeInLeft');
+                    $('.course-box').removeClass('fadeInRight');
+                    $('.inter-bk').addClass('fadeInUp');
+                    $('.bj').removeClass('fadeInDown');
+                    $('.score').removeClass('fadeInUp');
+                }
+                if ((oWinSrcHei + 450)>inter) {
+                    $('.appoint').removeClass('fadeInLeft');
+                    $('.course-box').removeClass('fadeInRight');
+                    $('.inter-bk').removeClass('fadeInUp');
+                    $('.bj').addClass('fadeInDown');
+                    $('.text_con01').addClass('fadeInLeft');
+                    $('.text_con02').addClass('fadeInUp');
+                    $('.text_con03').addClass('fadeInRight');
+                    $('.text_con04').addClass('fadeInUp');
+                    $('.text_con05').addClass('fadeInRight');
+                    $('.text_con06').addClass('fadeInUp');
+                    $('.text').addClass('fadeInDown');
+                    $('.score').removeClass('fadeInUp');
+                }
+                if ((oWinSrcHei + 400)>teacher) {
+                    $('.appoint').removeClass('fadeInLeft');
+                    $('.course-box').removeClass('fadeInRight');
+                    $('.inter-bk').removeClass('fadeInUp');
+                    $('.bj').removeClass('fadeInDown');
+                    $('.score').addClass('fadeInUp');
+                }
+            });
+
+            //     $(".dh-l").hover(function(){
+            //          $(".dh-l").delay(1000).addClass("fadeInLeft");
+            //          console.log($(".dh-l"))
+            // })   
+            //        $(".dh-l").mouseleave(function(){
+            //         console.log(this.className);
+            //             this.className = "text_con03 text dh-l";
+            // })
+            //        $(".dh-r").mouseover(function(){
+            //             this.addClass("fadeInRight");
+            //             this.className = "fadeInLeft"
+            // })
+                   
+            // $(".dh-r").mouseleave(function(){
+            //             this.removeClass("fadeInRight");
+            //             this.className = "fadeInLeft";
+            // })
+        });
+    </script>
+</head>
+<body>
+<!--S--Banner-->
+<div id="myCarousel" class="First_Carousel_area animated fadeInUp carousel slide">
+    <!--<a href="#" class="btn-zx">立即咨询</a>-->
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators" style="display:none;">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img style="width:100%;min-width:120px;" src="img/banner.jpg" alt="First slide">
+        </div>
+    </div>
+</div>
+<!--E--Banner-->
+<!--S--在线课堂简介-->
+<div style="background:#f8f8f8;width:100%;height: 600px;">
+<div class="Second_inLine_area animated online"style="min-width:1200px;">
+    <h2 class="tit">树袋老师<p style="display:inline-block;font-size: 45px;color:#D0021B;">在线</p>课堂</h2>
+    <p class="tit-fu">顶尖的师资力量&nbsp;&nbsp;优质的授课内容&nbsp;&nbsp;专业的课程服务</p>
+    <!--<div class="online-main img_box">
+        <ul class="online-txt" id="ul">
+            <li class="fir">
+                <img class="img-dd" src="/HMcode_QD/HMimages/img-bq.png">
+                <p>这里是文字效果展示</p>
+            </li>
+            <li class="sec">
+                <img class="img-dd" src="/HMcode_QD/HMimages/img-bq.png">
+                <p>这里是文字效果展示</p>
+            </li>
+        </ul>
+    </div>-->
+    
+        <div class="online-box" style="max-width:1200px;">
+        <div class="online_l">
+            <img src="img/icon-jqr.svg">
+            <h4>随时随地，灵活上课</h4>
+            <ul class="txt">
+                <li><img src="img/gj.svg" alt="" />&nbsp;打破时间地域限制，释放效率，高效学习</li>
+                <li><img src="img/gj.svg" alt="" />&nbsp;在线授课，极简操作，做到实时交流互动</li>
+                <li><img src="img/gj.svg" alt="" />&nbsp;课程全录制，课后可随时温习巩固</li>
+            </ul>
+        </div>
+        <div class="online_c">
+            <img src="img/icon-book.svg">
+            <h4>课程个性化定制</h4>
+            <ul class="txt">
+                <li><img src="img/gj.svg" alt="" />&nbsp;全面了解学生学习情况，匹配合适的老师</li>
+                <li><img src="img/gj.svg" alt="" />&nbsp;多维度分析诊断，定制个性化的学习方案</li>
+                <li><img src="img/gj.svg" alt="" />&nbsp;实时动态监测，针对性地调整学习规划</li>
+            </ul>
+        </div>
+        <div class="online_r">
+            <img src="img/icon-conputer.svg">
+            <h4>学习顾问“管家式”服务</h4>
+            <ul class="txt">
+                <li><img src="img/gj.svg" alt="" />&nbsp;随时监测上课情况，定期发送学习报告</li>
+                <li><img src="img/gj.svg" alt="" />&nbsp;课后及时反馈，家长第一时间了解学习动态</li>
+                <li><img src="img/gj.svg" alt="" />&nbsp;监督学生作业完成情况，即使答疑解惑</li>
+            </ul>
+        </div>
+    </div>
+    <a href="#" class="line-link" style="display:none;">+详细了解树袋在线课堂</a> 
+</div>
+ </div>
+<!--E--在线课堂简介-->
+<!--S--预约试听-->
+<div class="three_appoint_area animated appoint" style="display:none;"style="min-width:1200px;">
+    <h2 class="tit">一键预约，在线轻松上课</h2>
+    <div class="appoint-con">
+        <ul class="img-xz">
+            <b></b>
+            <b></b>
+            <b></b>
+            <li>
+                <img src="img/icon-yy1.png">
+            </li>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <li>
+                <img src="img/icon-yy2.png">
+            </li>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <li>
+                <img src="img/icon-yy3.png">
+            </li>
+            <b></b>
+            <b></b>
+            <b></b>
+        </ul>
+        <ul class="txt-xz">
+            <li>线上预约免费试听</li>
+            <li>专业课程顾问致电排课安排</li>
+            <li>注册账号开启学习之旅</li>
+        </ul>
+    </div>
+    <a href="#" class="link-yy">预约免费试听</a>
+</div>
+<!--E--预约试听-->
+<!--S--课程介绍-->
+<div class="four_course_area animated course-box"style="max-width:1200px;">
+    <h2 class="tit">国际课程体系<p style="display:inline-block;font-size:45px;color:#D0021B;">全覆盖</p></h2>
+    <p class="tit-fu">基础巩固&nbsp;&nbsp;&nbsp;查漏补缺&nbsp;&nbsp;&nbsp;培优拔高&nbsp;&nbsp;&nbsp;高分冲刺</p>
+    <div class="tab-con">
+        <ul class="tab-tit">
+            <li class="cur">IGCSE</li>
+            <li>A-Level</li>
+            <li>IB</li>
+            <li>AP</li>
+            <li>美高</li>
+        </ul>
+        <div class="tab-main">
+            <div class="tab-item" style="display: block">
+                <div class="box-tw">
+                    <img class="img-b" src="img/gjkc-1.png">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>IGCSE（International General Certificate of Secondary Education）为英国普通初级中学毕业文凭的全球考试系统，其证书在大部地区都被认可。不同于中国教育制度，IGCSE是英国中学10年级和11年级的课程。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
+                <ul class="item-m">
+                    <li><b>辅助学科：</b><p><i>数学</i><i>进阶数学</i><i>物理</i><i>化学</i><i>生物</i><i>历史</i><i>地理</i><i>经济</i><i>…</i></p></li>
+                    <li><b>适合学生：</b><p>国内初三到高二有留学意向的学生或已在学习IGCSE课程的学生</p></li>
+                    <li><b>课程目标：</b><p>准确定位学生学习起点，对课程内容进行整合，突破传统学习方法，快速适应和掌握IGCSE体系考点。&#10;
+                        扫清各科学习过程中的语言障碍，增强自信力，依据各科教学大纲，对知识模块进行全面系统的教学。&#10;
+                        围绕各科的考试重点、热点和难点问题，指导学生在解题思路与方法上建立个人框架与策略，进一步提升应试能力，各科成绩冲保A冲A*。</p></li>
+                </ul>
+            </div>
+            <div class="tab-item">
+                <div class="box-tw">
+                    <img class="img-b"src="img/gjkc-2.png">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>A-Level为英国高中课程（General Certificate of Education Advanced Level），是入读英国大学的必修课程，其重要性等同于中国高考。A-Level考试证书已被全球超过160个国家，11000多所大学认可，是全球公认的最为系统的高中课程体系之一。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
+                <ul class="item-m">
+                    <li><b>辅助学科：</b><p><i>数学</i><i>进阶数学</i><i>物理</i><i>化学</i><i>生物</i><i>历史</i><i>地理</i><i>经济</i><i>…</i></p></li>
+                    <li><b>适合学生：</b><p>国内初三到高二有留学意向的学生或已在学习A-Level课程的学生</p></li>
+                    <li><b>课程目标：</b><p>准确定位学生学习起点，对课程内容进行整合，突破传统学习方法，快速适应和掌握A-Level体系考点。
+                        扫清各科学习过程中的语言障碍，增强自信力，依据各科教学大纲，对知识模块进行全面系统的教学。
+                        围绕各科的考试重点、热点和难点问题，指导学生在解题思路与方法上建立个人框架与策略，进一步提升应试能力，各科成绩冲保A冲A*。</p></li>
+                </ul>
+            </div>
+            <div class="tab-item">
+                <div class="box-tw">
+                    <img class="img-b"src="img/gjkc-3.png">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>IB即国际文凭组织IBO（International Baccalaureate Oranization），为全球学生开设从幼儿园到大学预科的课程，为3-19岁的学生提供智力、情感、个人发展、社会技能等全方面的教育,对世界各国的同学一视同仁，被称之为国际教育的一个统一标准。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
+                <ul class="item-m">
+                    <li><b>辅助学科：</b><p><i>数学</i><i>物理</i><i>化学</i><i>生物</i><i>历史</i><i>地理</i><i>经济</i><i>…</i></p></li>
+                    <li><b>适合学生：</b><p>已在国际学校学习IB课程的学生或考虑选择IB课程体系的学生</p></li>
+                    <li><b>课程目标：</b><p>围绕各科SL或HL考试重点、热点、难点和焦点问题，根据学生实际情况定制课程。
+                        着重知识的迁移和应用，对各科知识点进行全面系统的教学，归纳总结、查缺补漏，在彻底掌握重点难点的基础上拓展加深，进一步提升学生应试能力。
+                        的启用海外名校毕业的资深老师，规范化、体系化的教学，帮助学生最终成绩突破6分并冲刺7分。
+
+                    </p></li>
+                </ul>
+            </div>
+            <div class="tab-item">
+                <div class="box-tw">
+                    <img class="img-b" src="img/gjkc-4.png">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>AP项目（Advanced Placement Program）是由美国大学理事会（The College Board）主持，在高中阶段开设的具有大学水平的课程，使有能力的高中生有机会先选修部分美国大学基础课程以获得美国大学学分。至今，50多个国家的3600所大学承认AP学分。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
+                <ul class="item-m">
+                    <li><b>辅导学科：</b><p><i>微积分AB&BC</i><i>物理1&2&C</i><i>化学</i><i>生物</i><i>世界／美国历史</i><i>计算机科学A</i><i>…</i></p></li>
+                    <li><b>适合学生：</b><p>高一高二有留学意向的高中生或对未来的专业方向已有一定的认识的学生</p></li>
+                    <li><b>课程目标：</b>
+                        <p>针对学员基础水平及其留学院校要求，定制专属AP课程方案。
+                            基础、强化、冲刺三阶段，让学生培养基本学科素养的基础上掌握中高难度的知识点，训练AP的解题思路。考前最后搏击，通过知识点串讲，历年真题训练的方式提高解题效率。
+                            启用海外名校毕业的资深老师，规范化、体系化的教学，学生AP的5分率高达90%。</p>
+                        </li>
+                </ul>
+            </div>
+            <div class="tab-item">
+                <div class="box-tw">
+                    <img class="img-b" src="img/gjkc-5.png">
+                    <div class="txt-b">
+                        <b class="yh-up">“</b>
+                        <p>美国高中的教育目标主要有两个：一是为部分学生做升学准备；二是帮助那些不准备升学的学生做就业、职业方向选择的准备，并为他们继续学习或达到其它教育目标打下基础。美国高中教育采用启发式教育，任何课程都要求学生自己去发掘、编排资料和撰写报告。</p>
+                        <b class="yh-down">”</b>
+                    </div>
+                </div>
+                <ul class="item-m">
+                    <li><b>课程学科：</b><p><i>代数</i><i>物理</i><i>化学</i><i>生物</i><i>美国历史</i><i>世界历史</i><i>…</i></p></li>
+                    <li><b>适合学生：</b><p>已在国际学校学习美高课程的学生或考虑选择美高课程体系的学生</p></li>
+                    <li><b>课程目标：</b>
+                        <p>美国高中课程的必修课一般设有英语、数学、科学、社会等。这些课程虽名为必修，但实际只是一种宏观构架，每一门必修学科下，还分层次使用不同水平的教材，开设不同名目的课程，同时美高课程的很多作业测评是以项目为实现形式，学生通过活学活用来实现学习、激发学习兴趣。树袋老师针对学生选择的不同学科的考点进行全方位梳理与辅导，帮助学生熟悉各类经典考题，在学校考试中力争高GPA。</p></li>
+                </ul>
+            </div>
+        </div>
+        <!--<a class="link-m" href="#">+详细了解树袋国际k12课程辅导</a>-->
+    </div>
+</div>
+<!--E--课程介绍-->
+<!--S--国际备考-->
+<div class="animated inter-bk" style="position:relative"style="min-width:1200px;">
+    <div style="width:100%;height:100%;background: #e8e8e8;opacity:.6;position:absolute;"></div>
+    <div style="position:relative;z-index:10;padding-top: 40px;">
+        <h2 class="tit">国际化学校考前巩固&nbsp;&nbsp;&nbsp; <p style="display:inline-block;font-size:45px;color:#D0021B;">一站式</p> 解决方案</h2>
+        <p class="tit-fu">紧扣学校入学考点&nbsp;&nbsp;&nbsp;个性化辅导&nbsp;&nbsp;&nbsp;升学无忧</p>
+        <!-- 折线图 -->
+        <img src="img/gjbkb-2.svg"style="width:770px;height:100px;" alt="" />
+        <ul class="e-chart">
+            
+            <li>确定意向国家<br />确定意向课程体系</li>
+            <li style="margin-top:25px;">选择若干意向学校<br />对比确定报考学校</li>
+            <li  style="margin-right: 130px;">参加树袋学习课程<br />定制专属课程规划</li>
+            <li style="margin-right:0;margin-top:25px;">参加入学考试<br />正式就读学校</li>
+        </ul>
+        <ul class="mk-bk">
+            <li class="mkd-bk">
+                <i class="icon-s">
+                    <img src="img/gjbkb-3.svg"style="margin-left:-5px;" alt="">
+                </i>
+                <div>
+                    <h3 class="bk-adh">国际化学校笔试辅导</h3>
+                    <p class="bk-adm">1.英文笔试词汇量及阅读/语法/写作/听力强化训练<br>2.科目类英文试卷适应性训练<br>3.必考知识点和专业术语集中强化训练<br>4.目标学校测试真题模拟</p>
+                </div>
+            </li>
+            <li class="mkd-bk">
+                <i class="icon-s">
+                    <img src="img/gjbkb-4.svg" alt="">
+                </i>
+                <div>
+                    <h3 class="bk-adh">国际化学校面试辅导</h3>
+                    <p class="bk-adm">结合学生目标学校的考察要点和题库资料，从以下方面进行针对性辅导：<br>1.个性化面试语料库准备<br>2.一对一问答<br>3.团队辩论和自我陈述</p>
+                </div>
+            </li>
+            <li class="mkd-bk">
+                <i class="icon-s">
+                    <img src="img/gjbkb-6.svg" alt="">
+                </i>
+                <div>
+                    <h3 class="bk-adh">国际化学校衔接课程</h3>
+                    <p class="bk-adm">
+                        根据学生入读学校的课程体系，采用不同教学方法进行针对性辅导，帮助学生快速熟悉并适应国际学校教学环境： <br> 1.英文能力提升<br>2.数理化等科目能力提升</p>
+                </div>
+            </li>
+            <li class="mkd-bk"style="margin-right:0;">
+                <i class="icon-s">
+                    <img src="img/gjbkb-7.svg" alt=""style="margin-left: -3px;">
+                </i>
+                <div>
+                    <h3 class="bk-adh">针对性小托福课程</h3>
+                    <p class="bk-adm">针对4年级以上，英语基础较好的学生开设小托福全计划辅导课程，帮助学生快速提分：<br><b>第一阶段：</b><br />听口+阅读（含语法分析）<br><b>第二阶段：</b><br />听口+阅读+语言形式和含义</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--<a class="link-m" href="#">+了解更多课程信息</a>-->
+</div>
+<!--E--国际备考-->
+<!-- 名师团 -->
+<div class="bj">
+        <div class="top">
+            <div class="top_l">
+                <h4>树袋</h4>
+                <h3>名师</h3>
+                <h4>团</h4>
+                <h4 class="top_r">快速提分有保障</h4> 
+            </div>
+            <div class="top_01">
+                <h5>85%三年以上教学经验</h5>
+                <h5>90%来自世界名校</h5>
+                <h5>95%家长学生好评率</h5>
+            </div>
+        </div>
+        <div class="note-up">
+            <div class="text text_con01  dh-l"style="transition:all 1s ease-out 4s;float:left;">
+                <i style="float:right;margin-left:13px;"><img src="img/1.svg"class="u" alt="" /></i>
+                <b style="text-align:right;">师资力量</b>
+                <span style="text-align:right;">严格的教学培训，打造金牌辅导团队</span>
+            </div>
+            <div class="text text_con02 dh-r"style="transition:all 1s ease-out 6s;float:right;">
+                <i style="float:left;margin-right:13px;"><img src="img/2.svg"class="u" alt="" /></i>
+                <b style="text-align:left;">树袋教案</b>
+                <span style="text-align:left;">自主研发特色教案，系统高效地达到学生学习目标</span>
+            </div>
+        </div>
+        <div class="note-body">
+            <div class="text_con03 text dh-l"style="transition:all 1s ease-out 2s;float:left;margin-top:70px;">
+                <i style="float:right;width:84px;height:74px;line-height:74px;margin-left:13px;"><img src="img/3.svg"class="l" alt="" /></i>
+                <b style="text-align:right;">在线课堂</b>
+                <span style="text-align:right;">课堂板书与课件实时同步，互动无障碍</span>
+            </div>
+            <img src="img/ms-2.svg"style="width:300px;height:146px;">
+            <div class="text_con04 text dh-r" style="transition:all 1s ease-out 8s;float:right;margin-top:70px;">
+                <i style="float:left;width:84px;height:74px;line-height:74px;margin-right:13px;"><img src="img/4.svg"class="l" alt="" /></i>
+                <b style="text-align:left;">教学理念</b>
+                <span style="text-align:left;">严格参考国际课程体系，提炼精准考点</span>
+            </div>
+        </div>
+        <div class="note-down"> 
+            <div class="text text_con05 dh-l"style="transition:all 1s ease-out 0;float:left;">
+                <i style="float:right;margin-left:13px;"><img src="img/6.svg"class="u" alt="" /></i>
+                <b style="text-align:right;">授课技巧</b>
+                <span style="text-align:right;">独家的学习经验和应试技巧，个性化教学</span>
+            </div>
+            <div class="text text_con06 dh-r"style="transition:all 1s ease-out 10s;float:right;">
+                <i style="float:left;margin-right:13px;"><img src="img/5.svg"class="u" alt="" /></i>
+                <b style="text-align:left;">引导教学</b>
+                <span style="text-align:left;">了解学生学习症结，课后全程辅导，及时答疑</span>
+            </div>
+        </div>
+</div>
+<!-- 成绩榜 -->
+<div style="position:relative;">
+    <div style="width:100%;height:540px;background: #e8e8e8;position:absolute;opacity:.2;"></div>
+<div class="score course-box" style="z-index:10;"style="min-width:1200px;">
+        <h2 class="tit">成绩<p style="display:inline-block;font-size:45px;color:#D0021B;">快速</p>提升&nbsp;&nbsp;&nbsp;家长口碑见证</h2>
+        <p class="tit-fu">课后学习顾问全程保障服务&nbsp;&nbsp;与家长及时沟通学生具体学习情况</p>
+        <div class="con-lr">
+            <div class="wrap" id="wrap">
+               <div class="slide" id="slide">
+                   <ul>
+                       <li><a href="#"><img src="img/img_01.png" alt=""/></a></li>
+                       <li><a href="#"><img src="img/img_06.png" alt=""/></a></li>
+                       <li><a href="#"><img src="img/img_03.png" alt=""/></a></li>
+                       <li><a href="#"><img src="img/img_04.png" alt=""/></a></li>
+                       <li><a href="#"><img src="img/img_07.png" alt=""/></a></li>
+                   </ul>
+                   <div class="arrow" id="arrow">
+                       <a href="javascript:;" class="prev"></a>
+                       <a href="javascript:;" class="next"></a>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--右悬浮-->
+<div class="consult-box">
+    <div>
+        <div class="con-icon"style="margin-bottom:25px;">
+            <img src="img/icon_tel.png" alt="">
+        </div>
+        <div class="tel-num"style="display:none;right: 140px;">021-52992557</div>
+    </div>
+    <div>
+        <div class="con-icon">
+            <img src="img/icon_m.png" alt="">
+        </div>
+        <div class="ewm"style="display:none;right: 140px;">
+            <img src="img/icon_l.jpg" alt="">
+            <p>树袋老师真人微信</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        /*轮播图*/
+        /*课程体系tab切换*/
+        $('.tab-tit li').hover(function(){
+            var divC = $('.tab-main .tab-item');
+            var liC = $('.tab-tit li');
+            var eqC = $(this).index();
+            divC.css("display","none");
+            liC.removeClass("cur");
+            $(this).addClass("cur");
+            divC.eq(eqC).css("display","block");
+        });
+            $(".tea-intro .intro-item").each(function(){
+                var fold = $(this).find(".fold");
+                var unfold = $(this).find(".unfold");
+                if(fold.is(":hidden")){
+                    $(this).width(150);
+                }else{
+                    $(this).width(150);
+                }
+            });
+            $(".tea-intro .intro-item").mouseover(function(){
+                var li_index = $(this).index();
+                    $(this).animate({width:150},0);
+                    $(this).find(".unfold").show();
+                    $(this).find(".fold").hide();
+                    $(this).siblings().animate({width:150},0);
+                    $(this).siblings().find(".unfold").hide();
+                    $(this).siblings().find(".fold").show();
+            });
+//            联系方式
+            $(".con-icon").mouseover(function(){
+
+              $(this).next().css({display:"block"});
+              $(this).next().stop().animate({right:"90px"},"fast")
+
+            });
+          $(".con-icon").mouseleave(function(){
+
+              $(this).next().stop().animate({right:"140px"},"1");
+              $(this).next().css({display:"none"});
+          });
+               
+    });
+
+
+</script>
+<script src="js/animate.js"></script>
+<script>
+    var wrap = document.getElementById("wrap");  // 大盒子
+    var arrow = document.getElementById("arrow");  // 三角
+    var slider = document.getElementById("slide");
+    var lis = slider.getElementsByTagName("li");  // 所有要操作的盒子
+    var mytime = setInterval(runImg,3000);
+    function runImg(){
+             change(true);
+        }
+    wrap.onmouseover = function() {  // 鼠标经过显示和隐藏 左右两个箭头
+         animate(arrow,{'opacity':100});
+         clearInterval(mytime);
+    }
+    wrap.onmouseout = function() {
+        animate(arrow,{'opacity':0});
+        mytime = setInterval(runImg,3000);
+    }
+    //  存储了每个图片的信息
+    var json = [
+        {   //  1
+            width:180,
+            top:90,
+            left:50,
+            opacity:50,
+            z:2
+        },
+        {  // 2
+            width:220,
+            top:40,
+            left:190,
+            opacity:80,
+            z:3
+        },
+        {   // 3
+            width:260,
+            top:0,
+            left:360,
+            opacity:100,
+            z:4
+        },
+        {  // 4
+            width:220,
+            top:40,
+            left:580,
+            opacity:80,
+            z:3
+        },
+        {   //5
+            width:180,
+            top:80,
+            left:765,
+            opacity:50,
+            z:2
+        }
+    ];
+    //  两个按钮点击事件
+    // 函数节流
+    var jieliu = true; //  用来控制函数节奏的 变量
+    var as = arrow.children;
+    change();
+    for(var k in as)
+    {
+        as[k].onclick = function() {
+            if(this.className == "prev")
+            {
+                //  alert("左侧")  移除第一个   放到json 最后一个
+                if(jieliu == true)
+                {
+                    change(false);
+                    jieliu = false;  // 点击完毕之后，立马取反
+                }
+
+            }
+            else
+            {
+               // alert('右侧');   把 最后一个json 删除   并且把最后一个添加到json 第一个位置
+                if(jieliu == true)
+                {
+                    change(true);
+                    jieliu = false;  // 点击完毕之后，立马取反
+                }
+            }
+        }
+    }
+
+    function change(flag) {
+        //  来判断
+        if(flag)
+        {
+            // 把 最后一个json 删除   并且把最后一个添加到json 第一个位置
+             json.unshift(json.pop());
+        }
+        else
+        {
+            //   移除第一个   放到json 最后一个
+            json.push(json.shift());
+        }
+      // 为什么给for呢？ 以为我们的json 有5个  盒子li 有 5个
+        for(var i=0;i<json.length; i++)
+        {
+            animate(lis[i],{
+                width: json[i].width,
+                top: json[i].top,
+                left: json[i].left,
+                opacity:json[i].opacity,
+                zIndex:json[i].z
+            },function(){ jieliu = true;})  // 回调函数是等动画执行完毕  才行
+        }
+    }
+</script>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.38456763 9 9.055 9 9.055 0.32756763 0.38456763 0.32756763"></polygon>
+    </defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="国际学校备考" transform="translate(-828.000000, -427.000000)">
+            <g id="Page-1" transform="translate(828.000000, 426.000000)">
+                <polygon id="Fill-1" fill="#515151" points="2 8.78492421 2.78503141 8 14 19.2150758 13.2149686 20"></polygon>
+                <polygon id="Fill-2" fill="#515151" points="5 6.78481704 5.78481704 6 17 17.2135445 16.215183 18"></polygon>
+                <polygon id="Fill-3" fill="#515151" points="8 3.78492421 8.78492421 3 20 14.2150758 19.2167145 15"></polygon>
+                <g id="Group-9">
+                    <g id="Group-6" transform="translate(15.000000, 16.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-5"></g>
+                        <path d="M2.041,6.12066667 L7.69266667,7.63566667 L6.176,1.984 L2.041,6.12066667 Z M8.34433333,8.98066667 L0.802666667,6.959 C0.609333333,6.90733333 0.456,6.754 0.404333333,6.559 C0.351,6.364 0.407666667,6.15733333 0.549333333,6.014 L6.071,0.492333333 C6.21433333,0.350666667 6.421,0.294 6.616,0.347333333 C6.811,0.399 6.96266667,0.552333333 7.016,0.745666667 L9.036,8.289 C9.08933333,8.484 9.03266667,8.69066667 8.88933333,8.834 C8.78266667,8.94233333 8.63766667,9.00066667 8.48933333,9.00066667 C8.441,9.00066667 8.39266667,8.994 8.34433333,8.98066667 L8.34433333,8.98066667 Z" id="Fill-4" fill="#515151" mask="url(#mask-2)"></path>
+                    </g>
+                    <polygon id="Fill-7" fill="#515151" points="0 7.12633333 6.18333333 0.944666667 6.98 1.743 0.798333333 7.92466667"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

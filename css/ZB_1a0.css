@@ -1,0 +1,967 @@
+/*html::-webkit-scrollbar {*/
+    /*display: none;*/
+/*}*/
+body{
+    margin:0 auto;
+}
+.carousel-control.right ,.carousel-control.left{
+    background: none;
+}
+.carousel-control{
+    opacity: 0;
+    font-size:120px;
+    width:80px;
+}
+#myCarousel .btn-zx{
+    font-size:24px;
+    display: block;
+    width:120px;
+    line-height: 36px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 10;
+    left:50%;
+    bottom:25%;
+    margin-left:-60px;
+    text-align: center;
+    color:#424242;
+    font-weight: normal;
+}
+/*在线课堂简介*/
+.online{
+    width:1020px;
+    margin:0 auto;
+    text-align: center;
+}
+.online .tit{
+    font-size: 38px;
+    line-height: 38px;
+    padding-top:60px;
+    color:#000000;
+    margin:0;
+    letter-spacing: 3px;
+}
+.online .tit-fu{
+    font-family: sans-serif;
+    font-size:20px;
+    color:#8C8C8C;
+    margin:0;
+    padding-top:25px;
+}
+.online-box>div>img{
+    width:160px;
+    height:160px;
+}
+.online-box{
+    overflow: hidden;
+    margin-top:40px;
+}
+.online-box>div{
+    width:330px;
+}
+.online_l{
+    display: block;
+    float: left;
+}
+.online_c{
+    display: block;
+    float: left;
+    margin:0 8%;
+}
+.online_r{
+    display: block;
+    float: left;
+}
+.online-box ul,.online-box li{
+    display: block;
+}
+.online-box h4{
+    font-size:24px;
+    color:#000;
+    margin:0;
+    padding-top:22px;
+    padding-bottom:35px;
+    text-align: center;
+}
+.online-box .txt{
+    text-align: left;
+    font-size:16px;
+    line-height: 32px;
+    color:#333;
+}
+.online .line-link{
+    display: block;
+    width:252px;
+    height:52px;
+    margin:55px auto 55px;
+    padding: 0 40px;
+    font-size:16px;
+    color:#8c8c8c;
+    border:1px solid #8c8c8c;
+    line-height: 52px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.online .line-link:hover{
+    color: #000000;
+    border-color: #000000;
+    text-decoration: none;
+}
+/*在线试听*/
+.appoint{
+    width:100%;
+    padding-bottom: 36px;
+    background-color: #f8f8f8;
+}
+.appoint .tit{
+    margin:0;
+    font-size:32px;
+    color:#000;
+    letter-spacing: 2px;
+    padding-top:40px;
+    text-align: center;
+}
+.appoint-con{
+    width:1020px;
+    margin:40px auto 0;
+}
+.appoint-con ul{
+    display: block;
+    overflow: hidden;
+}
+.appoint-con ul li{
+    display: block;
+    float: left;
+}
+.appoint-con img{
+    display: block;
+    width:95px;
+    margin:0 58px;
+}
+.img-xz b{
+    display: block;
+    float: left;
+    width:8px;
+    height:8px;
+    background-color: #8c8c8c;
+    margin:0 8px;
+    border-radius:50%;
+    margin-top:35px;
+}
+.txt-xz{
+    display: block;
+    overflow: hidden;
+}
+.txt-xz li{
+    display: block;
+    float: left;
+    width:295px;
+    margin:22px 20px 40px;
+    text-align: center;
+    font-size:18px;
+    color:#333;
+}
+.appoint .link-yy{
+    display: block;
+    width:127px;
+    height:40px;
+    margin:0 auto;
+    border:1px solid #8c8c8c;
+    border-radius: 4px;
+    font-size:16px;
+    line-height: 40px;
+    color:#8c8c8c;
+    text-align: center;
+
+}
+/*课程介绍部分*/
+.course-box{
+    width:1020px;
+    margin:0 auto;
+}
+.course-box .tit{
+    margin:0;
+    text-align: center;
+    color:#000000;
+    font-size:38px;
+    padding-top:60px;
+    padding-bottom:20px;
+    letter-spacing: 3px;
+}
+.course-box .tit-fu,.inter-bk  .tit-fu{
+    font-size:20px;
+    margin:0;
+    color: #9e9e9e;
+    padding-bottom: 47px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.box-tw{
+    overflow: hidden;
+}
+.box-tw img{
+    display: block;
+    float: left;
+    width:400px;
+    height:260px;
+}
+.box-tw .txt-b{
+    width:520px;
+    float: right;
+    margin-top:100px;
+    position: relative;
+}
+.box-tw .txt-b p{
+    display: block;
+    width:470px;
+    color:#8c8c8c;
+    font-size:16px;
+    line-height: 30px;
+    margin:0 auto;
+}
+.txt-b b{
+    position: absolute;
+    font-size:30px;
+    color:#8c8c8c;
+}
+.txt-b b.yh-up{
+    left:0;
+    top:0;
+}
+.txt-b b.yh-down{
+    right:0;
+    bottom:-20px;
+}
+.tab-con .tab-tit{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom:5px;
+}
+.tab-tit li{
+    display: inline-block;
+    margin:0 32px;
+    padding-bottom: 10px;
+    font-size:28px;
+    color:#000;
+    cursor: pointer;
+    border-bottom:4px solid transparent;
+}
+.tab-tit li.cur{
+    border-color: #000;
+}
+
+.tab-main .tab-item{
+    display:none;
+}
+.tab-item .item-m{
+    display: block;
+    width:980px;
+    color:#333;
+    margin-left:40px;
+    margin-top: 30px;
+    margin-bottom:100px;
+
+}
+.tab-item .item-m li{
+    overflow: hidden;
+}
+.tab-item .item-m b{
+    letter-spacing: 0;
+    font-size:20px;
+    padding-right: 20px;
+    display: block;
+    float: left;
+}
+.tab-item .item-m p{
+    display: block;
+    float: left;
+    font-size:17px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 850px;
+    margin:0;
+}
+.tab-main .tab-item li{
+    display: block;
+    margin-bottom: 30px;
+}
+.tab-item  .item-m i{
+    font-style: normal;
+    font-size:16px;
+    color:white;
+    display: inline-block;
+    background-color: #333;
+    margin-right:15px;
+    line-height: 25px;
+    padding:0 15px;
+    border-radius: 6px;
+}
+.tab-item .item-m i:hover{
+    padding:0 20px;
+    line-height:30px;
+    font-size:18px;
+    transition:all .2s ease-out;
+}
+.course-box .link-m{
+    font-size:16px;
+    display: block;
+    line-height: 40px;
+    border:1px solid #8c8c8c;
+    width:285px;
+    color:#8c8c8c;
+    text-align: center;
+    margin:20px auto 45px;
+    border-radius: 4px;
+}
+/*国际课程板块*/
+.inter-bk{
+    height:820px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-top:40px;
+    background:url("../img/gjbkbg.png") no-repeat  center bottom;
+    background-size:1440px 108%;
+}
+.chart {
+    /*height: 240px;*/
+    border-bottom: 1px solid #eeeeee;
+    padding: 1em;
+}
+
+.chart--headline, .chart--subHeadline {
+    text-align: center;
+}
+
+.chart--headline {
+    position: relative;
+    font-weight: 100;
+    font-size: 28px;
+}
+.chart--headline:before {
+    position: absolute;
+    content: '';
+    bottom: 133%;
+    left: 50%;
+    width: 25%;
+    margin: 0 0 0 -12.5%;
+    border-top: 1px dashed #999999;
+}
+
+.chart--subHeadline {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.charts--container {
+    background-color: white;
+    width: 100%;
+}
+
+.charts--headline {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    color: #444;
+    background-color: #fff;
+    padding: 1em;
+    margin: auto;
+}
+
+
+
+.lineChart--areaLine {
+    fill: none;
+    stroke: #6bb7c7;
+    stroke-width: 3;
+}
+
+.lineChart--bubble--label {
+    fill: none;
+    stroke: #6bb7c7;
+    font-size: 12.6px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.lineChart--bubble--value {
+    fill: #fff;
+    stroke: #fff;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.lineChart--circle {
+    fill: #6bb7c7;
+    stroke: #fff;
+    stroke-width: 3;
+}
+
+.lineChart--circle__highlighted {
+    fill: #fff;
+    stroke: #3f94a7;
+}
+
+.lineChart--gradientBackgroundArea--top {
+    stop-color: #6bb7c7;
+    stop-opacity: 0.1;
+}
+
+.lineChart--gradientBackgroundArea--bottom {
+    stop-color: #6bb7c7;
+    stop-opacity: 0.6;
+}
+
+.lineChart--svg {
+    /*border: 1px solid #eeeeee;*/
+    width: 1000px;
+    margin:0 auto;
+}
+
+.lineChart--xAxisTicks .domain, .lineChart--xAxis .domain, .lineChart--yAxisTicks .domain {
+    display: none;
+}
+
+.lineChart--xAxis .tick line {
+    display: none;
+}
+
+.lineChart--xAxisTicks .tick line, .lineChart--yAxisTicks .tick line {
+    fill: none;
+    stroke: #b3b3b3;
+    stroke-width: 1;
+    stroke-dasharray: 2,2;
+}
+
+.pieChart--center--innerCircle {
+    fill: #fff;
+}
+
+.pieChart--center--text {
+    font-size: 28px;
+}
+
+.pieChart--center--outerCircle {
+    fill: rgba(255, 255, 255, 0.75);
+}
+
+.pieChart--detail--divider {
+    stroke: gray;
+    stroke-width: 1;
+}
+
+.pieChart--detail--percentage {
+    font-size: 42px;
+    font-weight: 100;
+    fill: #333333;
+    stroke-width: 1px;
+}
+
+.pieChart--detail--textContainer {
+    background-color: transparent;
+    padding: 10px 0 0 0;
+    margin: 0;
+    color: #666666;
+    font-style: italic;
+}
+
+.pieChart--detail__left {
+    text-align: left;
+}
+
+.pieChart--detail__right {
+    text-align: right;
+}
+
+.pieChart__blue {
+    fill: #6bb7c7;
+}
+
+.pieChart__red {
+    fill: #d79d91;
+}
+
+/**
+ * Helper classes
+ */
+.hidden {
+    display: none;
+}
+
+
+/*老师介绍*/
+.teacher-box{
+    width:1000px;
+    margin:0 auto;
+    text-align: center;
+}
+.tea-intro{
+    height:150px;
+    position: relative;
+}
+.tea-intro .intro-item{
+    position: relative;
+    width:150px;
+    float: left;
+    height:150px;
+    top:0;
+}
+.intro-item .intro-tit{
+    height:150px;
+}
+.tea-intro .intro-item.fir{
+    background-color: red;
+    left:0;
+}
+/*.tea-intro .intro-item.sec{
+    background-color:#0E2D5F;
+    left:-40px;
+}
+.tea-intro .intro-item.thr{
+    background-color:#3ccb93;
+    left:-80px;
+}
+.tea-intro .intro-item.four{
+    background-color: #00ee00;
+    left:-120px;
+}
+.tea-intro .intro-item.five{
+    background-color: #2e6da4;
+    left:-160px;
+}*/
+.tea-intro .intro-item.fir{
+    background-color: red;
+    left:0;
+}
+.tea-intro .intro-item.sec{
+    background-color:#0E2D5F;
+    left:0;
+}
+.tea-intro .intro-item.thr{
+    background-color:#3ccb93;
+    left:0;
+}
+.tea-intro .intro-item.four{
+    background-color: #00ee00;
+    left:0;
+}
+.tea-intro .intro-item.five{
+    background-color: #2e6da4;
+    left:0;
+}
+.tea-intro .intro-det{
+    width:150px;
+    height:150px;
+    background-color: #ccc;
+    left:150px;
+    top:0;
+    display: none;
+}
+/*战绩榜*/
+.record-zj{
+    width: 1000px;
+    margin:0 auto;
+    text-align: center;
+    height: 400px;
+}
+.tab-b{
+    display: none;
+}
+.tab-tab .tab-t{
+    display: block;
+    overflow: hidden;
+    width:200px;
+    margin:0 auto;
+}
+.tab-tab .tab-t li{
+    display: block;
+    cursor: pointer;
+}
+.tab-tab .tab-t li.fir{
+    float: left;
+}
+.tab-tab .tab-t li.sec{
+    float: right;
+}
+.tab-t .cur{
+    color: red;
+}
+.tab-b table{
+    display: block;
+    width:800px;
+    margin:20px auto;
+}
+.tab-b table th{
+    width:400px;
+    text-align: center;
+}
+.tab-b table th:first-child ,.tab-b table th:last-child{
+    text-align: center;
+    width:200px;
+}
+tfoot{
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+table tr{
+    border-top:1px solid #ccc;
+}
+table td ,table thead th{
+    border-right: 1px solid #ccc;
+}
+table td:first-child{
+    border-left:1px solid #ccc ;
+}
+table thead{
+    border-left:1px solid #ccc ;
+}
+.mk-bk{
+    width:1000px;
+    margin:0 auto;
+
+}
+.mkd-bk{
+    width:225px;
+    height:290px;
+    margin-right:30px;
+    float:left;
+    list-style:none;
+    background: url("../img/gjbkb-1.svg")no-repeat;
+    opacity:1;
+}
+.mkd-bk:hover{
+    width:235px;
+    height:295px;
+    background-size:235px 285px;
+    transition:all .2s ease-out;
+}
+.icon-s{
+    display: block;
+    width:15px;
+    height:50px;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+.bk-adh{
+    color:#000000;
+    font-size:18px;
+    margin:15px auto;
+}
+.bk-adm{
+    font-size:12px;
+    color:#4b4b4b;
+
+    width:160px;
+    margin:0 auto;
+    line-height:20px;
+    text-align:left;
+}
+.e-chart{
+    width:850px;
+    height:75px;
+    margin:0 auto;
+    margin-bottom:70px;
+/*    background: url("../img/gjbkb-2.svg")no-repeat;
+    background-size: 770px 100px;*/
+}
+.e-chart li{
+    list-style: none;
+    float:left;
+    margin-right:90px;
+    color:#000;
+    font-size: 18px;
+    text-align:center;
+}
+.e-chart li:hover{
+    font-weight:700;
+}
+.bj{
+    width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+    margin-bottom:40px;
+}
+.bj .top{
+    text-align: center;
+    margin-top: 40px;
+}
+.bj i{
+    display:block;
+    width:74px;
+    height:84px;
+    color:#d0021b;
+    font-size: 24px;
+    line-height:84px;
+    text-align:center;
+    font-weight: 700;
+    font-style:normal;
+}
+.bj i .l{
+    width:60px;
+}
+.bj i .u{
+    height:60px;
+}
+.bj i .u:hover{
+    height:72px;
+    transition:all .5s ease-out;
+}
+.bj i .l:hover{
+    width:72px;
+    transition:all .5s ease-out;
+}
+
+.note-up,.note-down{
+    width:720px;
+    margin:0 auto;
+    height:90px;
+    clear:both;
+}
+.note-up{
+    margin-top:70px;
+}
+.note-body{
+    width: 945px;
+    height: 190px;
+    margin:0 auto;
+    clear:both;
+}
+.note-up>div,.note-down>div,.note-body>div{
+    width:320px;
+    transition:all 1s ease-out ;
+}
+.top .top_l h4{
+    font-size: 38px;
+    color: #000;
+    display: inline-block;
+}
+.top .top_l h3{
+    font-size: 45px;
+    color: #d0021b;
+    display: inline-block;
+}
+.top .top_r {
+    font-size: 38px;
+    color: #000;
+    display: inline-block;
+    margin-left: 25px;
+}
+.top .top_01{
+    margin-top: 16px;
+}
+
+.top .top_01 h5{
+    display: inline-block;
+    font-size: 20px;
+    color: #8c8c8c;
+    margin-left: 15px;
+    font-family: sans-serif;
+}
+
+/*中间*/
+
+.bj .text b{
+    display: block;
+    font-size: 20px;
+    color: #000;
+    text-align:center;
+    margin-bottom: 10px;
+}
+.bj .text span{
+    display:block;
+    font-size: 17px;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+/*正文*/
+
+
+.bj .text_conl{
+    margin-top: 30px;
+    float: left;
+   /* margin-left: 10px;*/
+
+}
+
+.bj .text_conl .text_con02{
+    margin-top: 65px;
+}
+
+.bj .text_conl .text_con01 b{
+    display: block;
+    font-size: 20px;
+    color: #000;
+    margin-left: 205px;
+    margin-bottom: 12px;
+}
+.bj .text_conl .text_con01 span{
+    font-size: 17px;
+    color: #4a4a4a;
+    margin-left: 40px;
+}
+.bj .text_conl .text_con02 b{
+    display: block;
+    font-size: 20px;
+    color: #000;
+    margin-left: 155px;
+    margin-bottom: 12px;
+}
+.bj .text_conl .text_con02 span{
+    font-size: 17px;
+    color: #4a4a4a;
+    margin-left: 5px;
+}
+
+
+.bj .text_conr .text_con03 b{
+    display: block;
+    font-size: 20px;
+    color: #000;
+    margin-top: 30px;
+    float: right;
+    margin-bottom: 12px;
+    margin-right: 237px;
+}
+.bj .text_conr .text_con03 span{
+    display: block;
+    float: right;
+    font-size: 17px;
+    color: #4a4a4a;
+   /* margin-right:13px;*/
+    margin-bottom: 65px;
+}
+.bj .text_conr .text_con04 b{
+    display: block;
+    font-size: 20px;
+    color: #000;
+    float: right;
+    margin-bottom: 12px;
+    margin-right: 150px;
+}
+.bj .text_conr .text_con04 span{
+    display: block;
+    font-size: 17px;
+    color: #4a4a4a;
+    float: right;
+    margin-bottom: 12px;
+
+}
+.score{
+    position:relative;
+}
+.swiper-container{
+    width:1000px;
+}
+.swiper-slide img{
+    width:260px;
+    height:525px;
+}
+.wrap{
+    width:1000px;
+    margin:20px auto;
+}
+.slide {
+    position: relative;
+}
+.slide li{
+    position: absolute;
+    left:200px;
+    top:0;
+    list-style: none;
+}
+.slide li img{
+    width:100%;
+}
+.arrow{
+    opacity: 0;
+    position: relative;
+    z-index:100;
+    height:500px;
+}
+.prev,.next{
+    width:52px;
+    height:52px;
+    position: absolute;
+    top:50%;
+    margin-top:-56px;
+    background: url(../img/icon_1.png) no-repeat;
+    z-index: 99;
+}
+.next{
+    right:0;
+    background-image: url(../img/icon_2.png);
+}
+.consult-box {
+    position: fixed;
+    top: 45%;
+    right: 30px;
+    z-index: 99;
+}
+.consult-box>div{
+    position:relative;
+}
+.consult-box>div>.con-icon{
+    width:60px;
+    height:60px;
+    border:2px solid #e6e6e6;
+    border-radius:50%;
+    line-height:55px;
+    text-align:center;
+    background: #fff;
+    z-index:999;
+}
+.tel-num {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    color: #636161;
+    border-radius: 10px;
+    box-shadow: 4px 1px 10px 2px #e6e6e6;
+    position: absolute;
+    top: 13px;
+    opacity:1;
+    background: #fff;
+}
+
+
+.consult-box>div>.con-icon>img{
+    width:37px;
+}
+.consult-box div:hover{
+    border-color:#000;
+}
+.ewm{
+    width:120px;
+    height:120px;
+    box-shadow: 4px 1px 10px 2px #e6e6e6;
+    text-align:center;
+    position: absolute;
+    top: -25px;
+    opacity:1;
+    background: #fff;
+}
+.ewm img{
+    margin:5px auto;
+    width:90px;
+}
+.ewm p{
+    font-size:12px;
+    color:#636161;
+
+}
+
+
+
+
+
+
+
